@@ -9,6 +9,7 @@
             v-model="question"
             size="80"
             maxlength="120"
+            class="form-control"
             placeholder="question"
           />
         </div>
@@ -26,11 +27,12 @@
             id="answerInput"
             size="60"
             v-model="currentAnswer"
+            class="form-control"
             placeholder="answer"
             ref="answerInput"
           />
           <button
-            class="btn btn-light"
+            class="btn btn-light mt-3"
             @click="addAnswer()"
             :disabled="currentAnswer === ''"
           >
